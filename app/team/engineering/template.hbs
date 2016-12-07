@@ -1,8 +1,9 @@
-<h5>Engineering Team</h5>
+<h2> Engineering Team </h2>
 <ul>
-  <li>Person Four</li>
-  <li>Person Five</li>
-  <li>Person Six</li>
+{{#each model as |engineer|}}
+  <li>{{engineer.name}}</li>
+  <p>{{engineer.note}}</p>
+{{/each}}
 </ul>
 
 {{#link-to 'team'}}Back{{/link-to}}
